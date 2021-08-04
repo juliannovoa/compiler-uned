@@ -1,0 +1,106 @@
+MODULE uno;
+(* programa vacio*)
+(* no se debe de imprimir nada*)
+
+CONST hola = 5;
+	  pepe = TRUE;
+	  maria = 8;
+
+TYPE vectorEnteros = ARRAY [1..3] OF INTEGER;
+	 vectorCons1 = ARRAY [hola..maria] OF INTEGER;
+	 vectorCons2 = ARRAY [1..maria] OF INTEGER;
+	 vectorCons3 = ARRAY [hola..7] OF INTEGER;
+	 vectorB = ARRAY [hola..7] OF BOOLEAN;
+
+VAR x, y, a, b, c, A, B : INTEGER;
+    abierto : BOOLEAN;
+    v1, v2, v3, v4, v5 : vectorEnteros;
+    v6 : vectorB;
+    
+PROCEDURE nombre;
+	BEGIN
+	END nombre;
+
+PROCEDURE nombre1 ();
+	BEGIN
+		WRITELN();
+	END nombre1; 
+
+PROCEDURE nombre2 : INTEGER;
+	BEGIN
+		x :=1;
+		y := 3;
+		return x;
+	END nombre2;
+	
+PROCEDURE nombre3 (i1, i2 : INTEGER;
+				       b1 : BOOLEAN) : INTEGER;
+	BEGIN
+		FOR I:= v1[4] TO nombre2 DO
+			WRITELN();
+		END;
+		RETURN 1;
+	END nombre3;
+	
+PROCEDURE f1 (v1, v2, v3, v4, v5 : vectorEnteros;
+			  e1, e2, e3, e4, e5 : INTEGER;
+			  b1, b2, b3, b4, b5 : BOOLEAN ) : INTEGER;					
+	CONST hola =  6;
+	      jj = TRUE;
+	      
+	TYPE vectorEnteros1 = ARRAY [1..maria] OF INTEGER;
+	     vectorEnteros2 = ARRAY [1..hola] OF INTEGER;
+	
+	VAR aux, index : INTEGER;
+	    zz : vectorCons1;
+	    
+	PROCEDURE nombre2 : BOOLEAN;
+		BEGIN
+			IF (a > b) THEN
+				A := b;
+				RETURN FALSE;
+			END;
+			RETURN TRUE;
+		END nombre2;
+
+	BEGIN
+		RETURN zz[1];
+    END f1;
+
+BEGIN
+	(* FIX  equals de tipos directos, no el nombre*)
+	
+	a := nombre3(nombre3(1,1,TRUE),v1[1],v6[hola]) - 1;
+	b := nombre2;
+	b := nombre2();
+
+	IF (a > b) THEN
+		A := b;
+	ELSE
+		A := a - b;
+		B := a;
+		nombre;
+	END;
+	
+	IF (a>b) THEN 
+		a:=b;
+		IF a>c THEN 
+			a:=c;
+		ELSE
+			c:=a;
+		END;
+	ELSE
+		b:=a;
+	END;	
+	
+	FOR I:= 1 TO 2 DO
+		WRITESTRING("");
+		nombre;
+	END;
+	
+	nombre1;
+	
+	
+END uno;
+
+
