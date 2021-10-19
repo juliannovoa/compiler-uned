@@ -1,6 +1,6 @@
 # compiler-uned
 
-Developed a full compiler (lexer, parser, semantic analyzer, intermediate code generator and assembly code generator) for a custom programming language with support for recursion.
+compiler-uned is a full compiler (lexer, parser, semantic analyzer, intermediate code generator and assembly code generator) for a custom programming language with support for recursion.
 
 ## Install dependencies
 
